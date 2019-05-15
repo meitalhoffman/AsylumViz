@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Exploring the Inequities in the United States Asylum System. A final project for Big Data, Visualization, and Society Sping 2019.">
+  <meta name="author" content="Meital Hoffman">
+
+  <title>Unequal Justice: Exploring the Inequities in the United States </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <script src="http://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
+  <script src="js/headlinesToView.js"> </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Unequal Justice</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#story">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#def">Definitions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About the Project</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Unequal Justice</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Exploring the Inequities in the United States Asylum System</h2>
+        <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> -->
+      </div>
+    </div>
+  </header>
+
+  <!--Starting with a Quote-->
+  <section id="quote" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">They told me, ‘you don’t have any rights here, and you don’t have any rights to stay with your son.’ …For me I died at that moment. They ripped my heart out of me. …For me, it would have been better if I had dropped dead. For me, the world ended at that point. …How can a mother not have the right to be with her son?”</h2>
+          <p class="text-white-50"> Valquiria, a 39-year-old Brazilian asylum-seeker, detained since March 2018, when US authorities forcibly separated her from her 6-year-old son, after they requested asylum at a port-of-entry in El Paso, Texas.</p>
+        </div>
+      </div>
+      <img src="img/child2.jpg" class="img-fluid" alt="">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="story" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Asylum Seekers in the United States</h2>
+          <p class="text-white"> Asylum laws are an increasingly relevant political topic: globally and nationally. 
+            With recent violence and political turmoil in places like Syria and Venezuela, global asylum seekers, those fleeing persecution in their home countries,
+          have been steadily increasing. The UN estimates that today there are 3.1 million asylum seekers worldwide. In the United States, asylum applications have fluctuated in the past 4 years.
+          </p>
+        <div id="overtime"></div>
+        <script src="js/vis0.js"></script>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-white">
+            Most notably, there was a sharp decline in total and defensive asylum applications from January 2017 to April 2017. 
+            This is the same time of Trump's controversial 'Muslim Ban' and Executive Order 13767, which made it more difficult
+            to claim asylum at the border.
+          </p>      
+        </div>
+          <img src="img/tweet.jpg" class="rounded mx-auto d-block">
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+          <p class = "text-white">
+            <br/>
+            <br/>
+            During his campaign and tenure in office, Trump has repeatedly called out asylum seekers for 'scamming' the system.
+            This highlights one of the injustices that asylum seekers face when seeking refuge in the United States.
+          </p>
+          <h2 class="text-white mb-4">Vulnerability to Political Climate</h2>
+          <p class="text-white">
+            The Executive Branch's rhetoric around asylum seekers can influence policy and popular discourse.
+            For people seeking asylum, their legal process
+            and outcomes may change drastically under different presidents.
+          </p>
+          <div id="defensive"></div>
+          <script src="js/vis1aa.js"></script>
+          <div id="affirmative"></div>
+          <script src="js/visualization1.js"></script>
+          <div class="row">
+            <p class = 'text-white'>
+              For affirmative asylum seekers, it may be getting more difficult to navigate 
+              the complex legal system. This is shown through the increased number of applicants
+              who are referred to immigration court because they filed too late and those who are being
+              denied asylum because they were not present at their interview. <br> <br>
+              Interestingly, while ~12% more applicants are classified as "No Show Denial" from 2015 to 2019,
+              there is only a ~3% increase in affirmative applicants who did not
+              show to their interview for the same time period, as seen in the graph below.
+              </p>
+            <div id="ainterview"> </div>
+            <script src = "js/vis1bb.js" ></script>
+          <p class="text-white">
+              The media may respond to the agenda of the Executive Branch, or may highlight topics which allows them
+              to become agenda-setters for political figures. Click on a bar (above) to see an article (below) from the New York
+              Times from the same month about asylum.
+            </p>
+            <div id="apic"></div>
+            </div>
+              <div class="row">
+                  <p class = 'text-white'>
+                    <br>
+              Besides the vulnerability to popular discourse as established by the media and key
+              political figures, asylum seekers are often left on their own to navigate
+              the complicated immigration bureaucracy. This is the root to another injustice faced by
+              those seeking asylum in the US.
+                    </p>
+                  </div>
+                  <img src="img/courtroom.jpg" class="img-fluid" alt="">
+                </div>
+      <div class="row">
+          <div class="col-lg-8 mx-auto">
+
+              <h2 class="text-white mb-4">Bureaucratic Inefficiencies</h2>
+              <p class="text-white">
+                  Even for well versed legal experts, the asylum system is complicated. For those
+                  entering the country without any information and potentially
+                  no grasp on the language, it is no doubt extremely confusing. 
+                  <br> <br>
+                  Use the animation below to explore the known and unknown legal paths of asylum seekers in 2018.
+                  Each dot represents 100 cases. Click on the stops to see where asylum seekers go from there.
+                </p>
+                <div id="animation"></div>
+                <script src="js/vis3.js"></script>
+                <p class="text-white">
+                    The cases stuck on the edge represent asylum seekers for whom the outcome of their case is not known.
+                    <br>The data available on asylum seekers leaves many gaps where numbers do not quite add up.
+                    It is impossible to know how many of the unaccounted for cases are in detention.
+                    <br>
+                    <br>
+                    As shown above, most asylum cases are referred to an immigration judge who will make a final ruling on their case.
+                    This can often take years, as there are hundreds and thousands of backlogged cases.
+                    <br>
+                    <br>
+                    Additionally, different immigration courts and officials across the country
+                    often have very distinct outcomes. This is another way in which asylum seekers
+                    are not afforded the American ideal of due process.
+                    <br>
+                    <br>
+                    <br>
+                    The most vulnerable populations are subject to an unjust and voltile system, both depriving
+                    them of their rights to a fair trial and due process of the law as is stated in the 
+                    United States Constitution.
+                    <br>
+                    
+                  </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="def" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/migrant.jpg" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Asylum Seeker</h4>
+            <p class="text-black-50 mb-0">According to the Refugee Act of 1980: anyone who “is unable or unwilling to return to… that country because of persecution or a well-founded fear of persecution on account of race, religion, nationality, membership in a particular social group, or political opinion”
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/border2.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Defensive Asylum</h4>
+                <p class="mb-0 text-white-50">Someone who is undocumented in the country, apprehended by immigration officials (ICE), and at risk of deportation or 
+                  someone who is apprehended at the border and asks to be granted asylum.
+                </p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/uscis.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Credible Fear Review</h4>
+                <p class="mb-0 text-white-50">Defensive asylum seekers must prove that they have a credible fear of
+                  persecution were they to return home. This is an intital screening interview done with an immigration officer
+                  in the event that the applicant is in the 'Expedited Removals' process.
+                  If they are found to have a credible fear, then they are referred to an immigration judge who will make the final
+                  decision on their case.
+                </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6">
+                  <img class="img-fluid" src="img/visa.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                  <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-left">
+                        <h4 class="text-white">Affirmative Asylum</h4>
+                        <p class="mb-0 text-white-50">Someone who is in the US on another visa and wants to change their status
+                          to be an asylee. They must file an application within one year of their other visa expiring. 
+                        </p>
+                        <hr class="d-none d-lg-block mb-0 ml-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Project Two Row -->
+              <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6">
+                  <img class="img-fluid" src="img/court.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                  <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-right">
+                        <h4 class="text-white">Affirmative Asylum Interview</h4>
+                        <p class="mb-0 text-white-50">
+                          Affirmative asylum applicants are interviewed by immigration officers to determine if they
+                          eligible for asylum status. If the immigration officer does not think they are eligible,
+                          they will be referred to an immigration judge who will make the final decision on their case.
+                        </p>
+                        <hr class="d-none d-lg-block mb-0 mr-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    </div>
+  </section>
+
+  <section id="signup" class="projects-section bg-light">
+      <div class="container">
+  
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/data.jpg" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Data Sources</h4>
+              <p class="text-black-50 mb-0">
+                Data came from USCIS and DHS.
+                Special thanks to Shaw Drake from Border Rights Center of the ACLU of Texas for helping us understand what was going on.
+                </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  <!-- Signup Section -->
+  <section id="about" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <!-- <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> -->
+          <h2 class="text-white mb-5">Final Project for Big Data, Visualization, and Society Spring 2019</h2>
+<!-- 
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-md-4 mb-1 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">meital@mit.edu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (555) 902-8832</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Meital Hoffman 2019
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
